@@ -39,6 +39,9 @@ class MissingKiKitDialog(wx.Dialog):
 
 
 try:
+    import site
+    site.addsitedir("/Users/stevenslupsky/Documents/kicad/6.0/3rdparty/plugins/com_github_yaqwsx_kikit/lib/python3.8/site-packages")
+
     from kikit.plugin import importAllPlugins
 
     importAllPlugins()
